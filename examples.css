@@ -1,0 +1,37 @@
+body {
+    background-color: aqua;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 500px;
+    border: 2px solid green;
+}
+
+.flex-container > div {
+    /* flex-grow: 1; */
+    flex-basis: 200px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+
+.features {
+    display: flex;
+}
+
+.feature-item {
+    flex-basis: calc(100% / 4 - 48px);
+    padding: 0 16px;
+    margin: 0 8px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 40px;
+}
