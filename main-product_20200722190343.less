@@ -1,0 +1,36 @@
+@import "../var/var.less";
+
+.main-product {
+    background-color: @color-white;
+    padding: 3.12rem;
+
+    @media only screen and (min-width: @tablet) {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    @media only screen and (min-width: @tablet) {
+        align-items: center;
+    }
+
+    &-img {
+        max-width: 12.5rem;
+        @media only screen and (min-width: @desktop) {
+            max-width: 100%;
+        }
+
+    }
+
+    &-title,
+    &-desc {
+        font-weight: bold;
+    }
+
+    &-link {
+        background-color: @color-orange;
+        padding: .5rem 1rem;
+        color: @color-black;
+    }
+
+   
+}
